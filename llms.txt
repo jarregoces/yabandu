@@ -1,0 +1,22 @@
+# Yabandú
+
+> Agencia digital especializada en desarrollo web, embudos de adquisición de clientes y automatizaciones con inteligencia artificial para negocios en Latinoamérica.
+
+## Páginas
+- Landing general: https://www.yabandu.com/
+- Desarrollo web: https://www.yabandu.com/desarrollo-web.html
+- Embudos de adquisición de clientes: https://www.yabandu.com/embudos-de-venta.html
+- Automatizaciones con IA: https://www.yabandu.com/automatizacion-ia.html
+
+## Servicios
+- Desarrollo web: sitios y landing pages de alto rendimiento, optimizadas para conversión y SEO técnico. Planes desde US$149. Entrega desde 72 horas.
+- Embudos de adquisición de clientes: sistemas de captación de leads que combinan landing pages, campañas pagas (Meta, Google, TikTok) y seguimiento automatizado. Planes desde US$249/mes.
+- Automatizaciones con IA: agentes de inteligencia artificial conectados a WhatsApp e Instagram que responden, califican y agendan clientes 24/7. Planes desde US$299/mes.
+
+## Datos clave
+- Fundador y director: José Arregoces, más de 15 años de experiencia.
+- Más de 150 proyectos entregados, 98% de clientes satisfechos.
+- Atiende negocios en toda Latinoamérica de forma remota.
+
+## Contacto
+- Agendar una cita: https://www.yabandu.com/#contacto
