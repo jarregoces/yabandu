@@ -1,22 +1,45 @@
 # Yabandú
 
-> Agencia digital especializada en desarrollo web, embudos de adquisición de clientes y automatizaciones con inteligencia artificial para negocios en Latinoamérica.
+> Agencia colombiana que instala sistemas de adquisición de clientes para servicios
+> profesionales. Su producto es "Agenda Llena": web, embudo de captación y un agente
+> de inteligencia artificial que responde, califica y agenda citas, entregados como un
+> solo sistema con un único responsable del resultado.
+
+## Propuesta de valor
+El cliente no compra piezas sueltas (web, campañas o chatbot por separado), sino un
+sistema completo. El modelo comercial es de pago por resultado: se cobra por cita
+calificada agendada, no por gestionar campañas.
 
 ## Páginas
-- Landing general: https://www.yabandu.com/
-- Desarrollo web: https://www.yabandu.com/desarrollo-web.html
-- Embudos de adquisición de clientes: https://www.yabandu.com/embudos-de-venta.html
-- Automatizaciones con IA: https://www.yabandu.com/automatizacion-ia.html
+- Inicio y oferta Agenda Llena: https://www.yabandu.com/
+- Pieza 1, Captamos (desarrollo web): https://www.yabandu.com/desarrollo-web.html
+- Pieza 2, Atraemos (embudos de adquisición): https://www.yabandu.com/embudos-de-venta.html
+- Pieza 3, Calificamos y agendamos (automatización con IA): https://www.yabandu.com/automatizacion-ia.html
 
-## Servicios
-- Desarrollo web: sitios y landing pages de alto rendimiento, optimizadas para conversión y SEO técnico. Planes desde US$149. Entrega desde 72 horas.
-- Embudos de adquisición de clientes: sistemas de captación de leads que combinan landing pages, campañas pagas (Meta, Google, TikTok) y seguimiento automatizado. Planes desde US$249/mes.
-- Automatizaciones con IA: agentes de inteligencia artificial conectados a WhatsApp e Instagram que responden, califican y agendan clientes 24/7. Planes desde US$299/mes.
+## Para quién
+Despachos de abogados, consultorías, contadores, inmobiliarias y servicios
+profesionales en Colombia.
+
+## Modelo de precios
+- Implementación (única vez): US$1.200
+- Por cita calificada agendada: desde US$25
+- Mínimo mensual de gestión: US$350
+- Inversión publicitaria: la paga el cliente directo a la plataforma, desde US$250/mes
+- Exclusividad: un solo cliente por sector y ciudad
+
+## Qué cuenta como cita calificada
+Persona real y nueva para el negocio, que cumple el perfil acordado por escrito, que
+quedó agendada con fecha y hora y que dejó datos de contacto verificables. El cliente
+tiene 48 horas para objetar una cita con justificación.
+
+## Caso documentado
+Un despacho de abogados de insolvencia económica en Colombia pasó de cero citas
+agendadas a más de 70 citas calificadas en su mejor mes, con US$250 de inversión
+publicitaria. Llevan 3 años con el sistema funcionando.
 
 ## Datos clave
 - Fundador y director: José Arregoces, más de 15 años de experiencia.
-- Más de 150 proyectos entregados, 98% de clientes satisfechos.
-- Atiende negocios en toda Latinoamérica de forma remota.
+- El sistema completo queda operativo en aproximadamente 30 días.
 
 ## Contacto
-- Agendar una cita: https://www.yabandu.com/#contacto
+- WhatsApp: https://wa.me/573215767930

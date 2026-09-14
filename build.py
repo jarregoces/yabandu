@@ -1,16 +1,27 @@
 #!/usr/bin/env python3
 """
-Build script — inyecta partials/header.html y partials/footer.html
-dentro de cada página HTML, marcando el link de navegación activo
-según el atributo data-page de cada <body>.
+Sincroniza el header y el footer de todas las páginas.
 
-Uso: editar partials/header.html o partials/footer.html y volver a
-correr:  python3 build.py
+Edita partials/header.html o partials/footer.html y ejecuta:
+
+    python3 build.py
+
+El script reemplaza el bloque <header>...</header> y <footer>...</footer>
+de cada página por el contenido de los partials.
+
+Tokens disponibles dentro de los partials:
+  {HOME}  -> "" en index.html, "index.html" en el resto (para los anclajes)
+  {WA}    -> enlace de WhatsApp con el mensaje por defecto
 """
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).parent
+WA_NUMBER = "573215767930"
+WA_MSG = "Hola Yabandú, quiero saber cómo llenar mi agenda de citas."
+WA_LINK = f"https://wa.me/{WA_NUMBER}?text={quote(WA_MSG)}"
+
 PAGES = [
     "index.html",
     "desarrollo-web.html",
@@ -20,28 +31,42 @@ PAGES = [
     "terminos-de-servicio.html",
 ]
 
-header_src = (ROOT / "partials" / "header.html").read_text(encoding="utf-8")
-footer_src = (ROOT / "partials" / "footer.html").read_text(encoding="utf-8")
+header_src = (ROOT / "partials" / "header.html").read_text(encoding="utf-8").strip()
+footer_src = (ROOT / "partials" / "footer.html").read_text(encoding="utf-8").strip()
+
+
+def render(tpl: str, page: str) -> str:
+    home = "" if page == "index.html" else "index.html"
+    return tpl.replace("{HOME}", home).replace("{WA}", WA_LINK)
+
 
 for name in PAGES:
     path = ROOT / name
+    if not path.exists():
+        print(f"  ! {name} no existe, se omite")
+        continue
+
     html = path.read_text(encoding="utf-8")
+    original = html
 
-    m = re.search(r'data-page="([^"]+)"', html)
-    page = m.group(1) if m else None
+    html, n_h = re.subn(
+        r"<header>.*?</header>",
+        lambda _: render(header_src, name),
+        html, count=1, flags=re.S,
+    )
+    html, n_f = re.subn(
+        r"<footer>.*?</footer>",
+        lambda _: render(footer_src, name),
+        html, count=1, flags=re.S,
+    )
 
-    header = header_src
-    if page:
-        header = re.sub(
-            rf'(<a[^>]*data-nav="{re.escape(page)}"[^>]*)>',
-            r'\1 class="active">',
-            header
-        )
+    if not n_h or not n_f:
+        print(f"  ! {name}: header={n_h} footer={n_f} — revisar la marcación")
 
-    html = re.sub(r'<header id="site-header"></header>', header.strip(), html, count=1)
-    html = re.sub(r'<footer id="site-footer"></footer>', footer_src.strip(), html, count=1)
+    if html != original:
+        path.write_text(html, encoding="utf-8")
+        print(f"  ✓ {name} actualizado")
+    else:
+        print(f"  = {name} sin cambios")
 
-    path.write_text(html, encoding="utf-8")
-    print(f"  ✓ {name} (nav activo: {page})")
-
-print("Listo — header y footer inyectados en todas las páginas.")
+print("Listo — header y footer sincronizados.")
