@@ -21,14 +21,10 @@ sitemap.xml · robots.txt · llms.txt
 
 ## Medición — Google Tag Manager
 
-Cada página incluye el contenedor de **Google Tag Manager**, desde el que
-se administran GA4 y los pixels (Meta, TikTok, etc.) sin tocar el código.
-
-> ⚠️ **Pendiente:** el código usa el ID de ejemplo `GTM-XXXXXXX`.
-> Reemplázalo por tu ID real de contenedor (formato `GTM-XXXXXXX`) en las
-> **6 páginas** (aparece 2 veces por página: el `<script>` del `<head>` y
-> el `<noscript>` tras `<body>`). Búsqueda y reemplazo global de
-> `GTM-XXXXXXX` → tu ID.
+Cada página incluye el contenedor de **Google Tag Manager** (`GTM-NNZVVCL7`),
+desde el que se administran GA4 y los pixels (Meta, TikTok, etc.) sin tocar
+el código. El snippet está en las 6 páginas: el `<script>` en el `<head>` y
+el `<noscript>` justo tras `<body>`.
 
 Al hacer clic en cualquier CTA de WhatsApp o en el botón flotante se envía
 el evento `whatsapp_click` a `dataLayer`, listo para configurarse como
